@@ -2,7 +2,7 @@
 
 This is an operating system run in the web.
 it includes a few apps that function correctly.
-you can drag the window around and even use some of the apps.
+you can drag the window around and even use some of the apps.AI was used to figure out how to insert images into the codespace and help build the terminal properly.
 NOTICE: APPS NEED TO BE DOUBLE CLICKED TO OPEN!!!
 Here are what it includes:
 - Terminal: it can run a few simple commands, includes "help" for commands list
