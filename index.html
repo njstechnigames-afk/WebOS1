@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script type="module" src="./script.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body style="background-image: url('./bg3.JPG'); background-size: cover; height: 100vh;">
+    <div class="window" id="welcome" style="background-color: #147907; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 16px; border: solid; width: 200px; border-radius: 16px">
+        <p class="windowheader" id="welcomeheader" style="cursor: move; background: #ddd; padding: 4px; margin: -16px -16px 12px -16px; border-top-left-radius: 12px; border-top-right-radius: 12px;">|Welcome!|</p></p>
+          <p style="cursor: pointer" id="welcomeclose">X</p>
+          <p>Hello User!</p>
+          <h2>this tab can be dragged by click and dragging</h2>
+          <h1>Welcome to my OS</h1>
+          <img src="./bg.png" />
+          <a href="https://mail.google.com/mail/u/0/#inbox/">Email me on njstechnigames@gmail.com!</a>
+    </div>
+    <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(6, 209, 169, 0.25); color: #000000; justify-content: space-between;">
+      <p style="margin-left: 16px;">
+        NicksterOS    
+      </p> 
+      <p style="cursor: pointer" id="welcomeopen">|Welcome!|</p>
+      <p id="timeElement" style="margin-right: 16px;">
+        Time
+      </p>
+    </div>
+    <div class="thechosenone" id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+      <div id="notes-icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+        <img src="./note_app.png" style="width: 55px; height: 64px; border-radius: 16px;">
+        <p style="margin: 0px; color: #fff; ">Nick Notes</p>
+      </div>
+    </div>
+    <div class="window" id="notes" style="display: none; background-color: #ffffff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 16px; border: solid; width: 200px; border-radius: 16px">
+        <div class="windowheader" id="notesheader" style="cursor: move; background: #2eac00; padding: 4px; margin: -16px -16px 12px -16px; border-top-left-radius: 12px; border-top-right-radius: 12px;">Nick Notes</div>
+          <p style="cursor: pointer" id="closewindow">X</p>
+          <div contenteditable="true" style="outline: none; min-height: 100px;">
+            Sample text
+          </div>
+    </div>
+      <div class="thechosenone" id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+      <div id="store-icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+        <img src="./app_store.png" style="width: 55px; height: 64px; border-radius: 16px;">
+        <p style="margin: 0px; color: #fff; ">App Archives</p>
+      </div>
+    </div>
+    <div class="window" id="store" style="display: none; background-color: #35b12a; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 16px; border: solid; width: 200px; border-radius: 16px">
+        <div class="windowheader" id="storeheader" style="cursor: move; background: #06b0ad; padding: 4px; margin: -16px -16px 12px -16px; border-top-left-radius: 12px; border-top-right-radius: 12px;">App Archives</div>
+          <p style="cursor: pointer" id="closewindow2">X</p>
+           ERR 404 No content found :[
+    </div>
+    <div id="terminal-icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
+      <img src="./terminal_icon.png" style="width: 55px; height: 64px; border-radius: 16px;">
+      <p style="margin: 0px; color: #fff;">LXTerminal</p>
+    </div>
+    <div class="window" id="terminal" style="display: none; background-color: #000000; color: #00ff00; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 250px; padding: 16px; border: solid 2px #00ff00; border-radius: 8px; font-family: monospace;">
+      <div class="windowheader" id="terminalheader" style="cursor: move; background: #333333; color: white; padding: 4px; margin: -16px -16px 12px -16px; border-top-left-radius: 6px; border-top-right-radius: 6px; display: flex; justify-content: space-between;">
+          <span>Terminal</span>
+          <span style="cursor: pointer;" id="terminalclose">X</span>
+      </div>
+      <div id="terminal-output" style="height: 170px; overflow-y: auto; margin-bottom: 8px;">
+          Nickster OS Type 'help' for available commands.<br>
+      </div>
+      <div style="display: flex;">
+          <span>user@NicksterOS:~$ &nbsp;</span>
+          <input type="text" id="terminal-input" style="background: transparent; border: none; color: #00ff00; outline: none; width: 100%; font-family: monospace;" autofocus>
+      </div>
+  </div>
+    <script src="script.js"></script>
+    <div class="closebutton" id="welcomeheader"></div>
+  </body>
+
+</html>
